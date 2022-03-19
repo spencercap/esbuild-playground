@@ -10,8 +10,7 @@
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"dev": "ts-node src/index.ts",
-		"clean": "rm -rf dist",
-		"build": "run-s build:*",
+		"build": "rm -rf dist && run-s build:*",
 		"build:ts": "node ./esbuild.js",
 		"build:types": "tsc --emitDeclarationOnly --outDir dist"
 	},

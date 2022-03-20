@@ -1,4 +1,5 @@
-import { build } from 'esbuild';
+// import { build } from 'esbuild';
+const { build } = require('esbuild');
 
 build({
 	entryPoints: ['src/index.ts'],
@@ -8,7 +9,7 @@ build({
 	minify: false,
 	splitting: true, // only for esm
 	format: 'esm', // esm works in node+browser
-	// outExtension: { '.js': '.mjs' }, // .js -> .mjs (change package.json main + modules entry IF doing this)
+	outExtension: { '.js': '.mjs' }, // .js -> .mjs (change package.json main + modules entry IF doing this)
 	target: ['esnext']
 })
 	.catch(() => process.exit(1));

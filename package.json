@@ -5,8 +5,8 @@
 	"keywords": [],
 	"author": "@spencercap",
 	"license": "ISC",
-	"main": "dist/index.js",
-	"module": "dist/index.js",
+	"main": "dist/index.mjs",
+	"module": "dist/index.mjs",
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"dev": "ts-node src/index.ts",

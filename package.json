@@ -5,14 +5,17 @@
 	"keywords": [],
 	"author": "@spencercap",
 	"license": "ISC",
-	"type": "module",
-	"main": "dist/index.mjs",
+	"type": "commonjs",
+	"main": "dist/index.js",
 	"module": "dist/index.mjs",
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"dev": "ts-node src/index.ts",
 		"build": "rm -rf dist && run-s build:*",
-		"build:ts": "node ./esbuild.js",
+		"buildxx": "run-s build:*",
+		"build:cjs": "node ./esbuild.cjs.js",
+		"build:ems": "node ./esbuild.esm.js",
+		"xxbuild:ts": "node ./esbuild.js",
 		"build:types": "tsc --emitDeclarationOnly --outDir dist"
 	},
 	"files": [

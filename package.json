@@ -5,13 +5,16 @@
 	"keywords": [],
 	"author": "@spencercap",
 	"license": "ISC",
+	"type": "commonjs",
 	"main": "dist/index.js",
-	"module": "dist/index.js",
+	"module": "dist/index.mjs",
+	"browser": "dist/index.mjs",
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"dev": "ts-node src/index.ts",
 		"build": "rm -rf dist && run-s build:*",
-		"build:ts": "node ./esbuild.js",
+		"build:cjs": "node ./esbuild.cjs.js",
+		"build:ems": "node ./esbuild.esm.js",
 		"build:types": "tsc --emitDeclarationOnly --outDir dist"
 	},
 	"files": [

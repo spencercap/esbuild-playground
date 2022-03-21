@@ -1,0 +1,15 @@
+{
+  "name": "test-node-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "link": "npm link esbuild-playground",
+    "unlink": "npm unlink esbuild-playground",
+    "test": "node index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

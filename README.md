@@ -1,10 +1,11 @@
 # esbuild-playground
 
-learnings from: https://medium.com/geekculture/build-a-library-with-esbuild-23235712f3c
+how to build a ts/js package for node + browser.
 
-* builds + bundles .ts -> js (esm) using `esbuild`
+operations:
+* builds + bundles .ts -> js (esm + cjs) using `esbuild`
 * generates types (index.d.ts) using `tsc`
-* run `npm run build`
+* build all w: `npm run build`
 
 ---
 

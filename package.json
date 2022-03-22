@@ -1,19 +1,17 @@
 {
 	"name": "esbuild-playground",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "",
 	"keywords": [],
 	"author": "@spencercap",
 	"license": "ISC",
 	"type": "commonjs",
+	"types": "dist/index.d.ts",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
 	"browser": {
-		"crypto": "crypto-js",
-		"path": "path-browserify",
-		"xmlhttprequest": "xmlhttprequest"
+		"crypto": "crypto-js"
 	},
-	"types": "dist/index.d.ts",
 	"scripts": {
 		"dev": "ts-node src/index.ts",
 		"build": "rm -rf dist && run-s build:*",
@@ -24,16 +22,14 @@
 	"files": [
 		"dist"
 	],
+	"dependencies": {
+		"algosdk": "^1.14.0",
+		"crypto-js": "^4.1.1"
+	},
 	"devDependencies": {
 		"esbuild": "^0.14.27",
 		"npm-run-all": "^4.1.5",
 		"ts-node": "^10.7.0",
 		"typescript": "^4.6.2"
-	},
-	"dependencies": {
-		"algosdk": "^1.14.0",
-		"crypto-js": "^4.1.1",
-		"path-browserify": "^1.0.1",
-		"xmlhttprequest": "^1.8.0"
 	}
 }

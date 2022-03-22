@@ -13,11 +13,6 @@ async function run() {
 	console.log('run started');
 
 	await p.test();
-
-	// // test api call
-	// const bricksInfo = await algonaut.getAppInfo(49584323);
-	// console.log(bricksInfo);
-
 };
 run();
 

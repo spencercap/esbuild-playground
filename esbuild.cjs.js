@@ -9,13 +9,8 @@ build({
 	minify: false,
 	target: ['esnext'],
 
-	// esm
-	// splitting: true, // only for esm
-	// format: 'esm', // esm works in node+browser
-	// outExtension: { '.js': '.mjs' }, // .js -> .mjs (change package.json main + modules entry IF doing this)
-
+	// NODE build
 	platform: 'node',
-	// cjs
 	format: 'cjs', // commonJs is for node
 })
 	.catch(() => process.exit(1));

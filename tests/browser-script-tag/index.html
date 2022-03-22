@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pkg test</title>
+</head>
+<body>
+<!--
+FYI
+requires entire dir including index.mjs to be served localled, ex:
+	python3 -m http.server
+-->
+	<script type="module">
+		console.log('starting test');
+
+		// fyi importing .mjs https://jakearchibald.com/2017/es-modules-in-browsers/
+		import { add, Packers } from '../../dist/index.mjs';
+
+		const sum = add(5, 6);
+		console.log('sum', sum);
+
+		const p = new Packers();
+		console.log('p', p);
+
+		async function run() {
+			console.log('run started');
+
+			await p.test();
+		};
+		run();
+	</script>
+</body>
+</html>

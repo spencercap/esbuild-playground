@@ -7,6 +7,7 @@ build({
 	bundle: true,
 	sourcemap: true,
 	minify: false,
+	treeShaking: false,
 	target: ['esnext'],
 
 	// BROWSER build

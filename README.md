@@ -20,6 +20,8 @@ operations:
 	https://esbuild.github.io/
 * esbuild note on node-only pkgs (like `path`. tldr, update "browser" field in package)
 	https://esbuild.github.io/getting-started/#bundling-for-the-browser
+* iffy method... the tsc build approach (extends different tsconfigs)
+	https://www.sensedeep.com/blog/posts/2021/how-to-create-single-source-npm-module.html
 
 
 ---
@@ -30,8 +32,12 @@ from root dir:
 ```
 npm link
 ```
+or
+```
+npm run link
+```
 
-in another dir: (sym links the package to the project's node_modules/ folder)
+in test dirs: (sym links the package to the project's node_modules/ folder)
 ```
 npm link esbuild-playground
 ```

@@ -10,10 +10,12 @@
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
 	"browser": {
+		".": "dist/index.mjs",
 		"crypto": "crypto-js"
 	},
 	"scripts": {
 		"dev": "ts-node src/index.ts",
+		"link": "npm link",
 		"build": "rm -rf dist && run-s build:*",
 		"build:cjs": "node ./esbuild.cjs.js",
 		"build:esm": "node ./esbuild.esm.js",

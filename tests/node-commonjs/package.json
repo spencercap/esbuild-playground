@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+    "install": "npm link esbuild-playground",
+    "postinstall": "echo 'hellooo from after `npm i`'"
   },
   "keywords": [],
   "author": "",

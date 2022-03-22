@@ -15,6 +15,23 @@ import HelloWorld from './components/HelloWorld.vue'
 // const sum = add(5, 6);
 // console.log('sum', sum);
 
+import { Packers } from 'esbuild-playground';
+const p = new Packers();
+console.log('p', p);
+
+async function run() {
+	console.log('run started');
+
+	await p.test();
+
+	// // test api call
+	// const bricksInfo = await algonaut.getAppInfo(49584323);
+	// console.log(bricksInfo);
+
+};
+run();
+
+
 </script>
 
 <template>

@@ -14,6 +14,7 @@ build({
 	// format: 'esm', // esm works in node+browser
 	// outExtension: { '.js': '.mjs' }, // .js -> .mjs (change package.json main + modules entry IF doing this)
 
+	platform: 'node',
 	// cjs
 	format: 'cjs', // commonJs is for node
 })

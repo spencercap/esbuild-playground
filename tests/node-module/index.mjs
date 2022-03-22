@@ -14,7 +14,14 @@ console.log('sum', sum);
 // modular part of package (named export)
 // either type of import work
 // import { add } from './node_modules/esbuild-playground/dist/index.mjs'; // must have .js / .mjs ending + start with "./" or "../"
-import { add } from 'esbuild-playground/dist/index.mjs'; // import mjs build
+import { add, Packers } from 'esbuild-playground/dist/index.mjs'; // import mjs build
 
 const sum2 = add(5, 6);
 console.log('sum2', sum2);
+
+
+// algo test
+// const p = new Packers();
+// console.log('p', p);
+
+// p.test();

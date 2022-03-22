@@ -9,6 +9,7 @@ build({
 	minify: false,
 	target: ['esnext'],
 
+	platform: 'browser',
 	// esm
 	splitting: true, // only for esm
 	format: 'esm', // esm works in node+browser

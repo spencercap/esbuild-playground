@@ -11,6 +11,7 @@ async function run() {
 	console.log('run started');
 
 	await p.test();
+  await p.initWc();
 };
 run();
 

@@ -1,6 +1,8 @@
+import { Buffer } from 'buffer';
+global.Buffer = Buffer;
+
 import { createApp } from 'vue'
 import App from './App.vue'
-
 createApp(App).mount('#app')
 
 //
